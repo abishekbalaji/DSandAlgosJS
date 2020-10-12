@@ -43,4 +43,5 @@ console.log(same2([1, 2, 1, 3, 2, 1, 3, 3], [4, 9, 1, 4, 1, 1, 9, 9]));
 // order of elements need not be same. Squares can be mixed up in arr2.
 
 
-// same is a lot faster
+// same --> O(n)
+// same2 --> O(n^2)

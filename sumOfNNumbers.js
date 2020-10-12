@@ -11,4 +11,5 @@ const sumOfnNumbers2 = (n) => (n * (n + 1)) / 2;
 console.log(sumOfnNumbers(3));
 console.log(sumOfnNumbers2(3));
 
-// sumOfnNumbers2 is faster
+// sumOfnNumbers --> O(n)
+// sumOfNumbers2 --> O(1)
