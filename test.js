@@ -11,3 +11,7 @@ const char = "y";
 
 console.log(result[char] > 0);
 console.log(undefined > 0);
+
+const num = Infinity;
+
+console.log(num);
