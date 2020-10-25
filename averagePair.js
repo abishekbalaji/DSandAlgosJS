@@ -10,9 +10,10 @@ const averagePair = (arr, avg) => {
   let i = 0,
     j = arr.length - 1;
   while (i !== j) {
-    if ((arr[i] + arr[j]) / 2 === avg) {
+    let tempAvg = (arr[i] + arr[j]) / 2;
+    if (tempAvg === avg) {
       return true;
-    } else if ((arr[i] + arr[j]) / 2 > avg) {
+    } else if (tempAvg > avg) {
       j--;
     } else {
       i++;

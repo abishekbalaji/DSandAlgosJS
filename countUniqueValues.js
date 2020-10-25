@@ -44,15 +44,14 @@ const countUniqueValues4 = (arr) => {
   let i = 0,
     j = 1;
   while (j !== arr.length) {
-    if (arr[i] === arr[j]) {
-      j++;
-    } else {
+    if (arr[i] !== arr[j]) {
       i++;
       arr[i] = arr[j];
-      j++;
-    }
+    } 
+    j++
   }
   return i + 1;
 };
 
 console.log(countUniqueValues4([1, 1, 2, 3, 3, 4, 4, 5]));
+
