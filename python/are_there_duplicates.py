@@ -3,14 +3,12 @@
 def are_there_duplicates(*args):
     counter = {}
     for x in args:
-        try:
-            if counter[x]:
-                return True
-        except KeyError as key:
-            counter[x] = 1
+        if counter.get(x):
+            return True
+        counter[x] = 1
     return False
 
-print(are_there_duplicates(1, 2, 3, 4))
+print(are_there_duplicates(1, 2, 3, 4, 1))
 
 # Multiple pointers
 
@@ -50,9 +48,3 @@ def are_there_duplicates4(*args):
     
 
 print(are_there_duplicates4(2, 1, 4, 5 ,7))
-    
-
-
-
-
-    
