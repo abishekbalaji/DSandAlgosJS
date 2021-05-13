@@ -18,7 +18,7 @@ def are_there_duplicates2(*args):
     while  i < len(args) - 1:
         if j == len(args):
             i += 1
-            j = i + 1
+            j = i
         elif args[i] == args[j]:
             return True
         j += 1
